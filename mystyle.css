@@ -35,6 +35,8 @@ body {
 div.box {
     width: 1000px;
     height: 240px;
+    max-width: 900px;
+    min-width: 100px;
 
     margin-top: 1cm;
     margin-bottom: 10mm;
@@ -51,12 +53,17 @@ div.box {
     border-color: black;
     border-radius: 50px;
     background-color: aliceblue;
+
+    display: block;
+    position: sticky;
 }
 
 /* Use short-hand and relative unit values */
 section > div.formbox {
     width: 70em;
     height: 40em;
+    max-width: 100em;
+    min-width: none;
 
     margin: 1vw 1vw 5vw 10vw;
 
@@ -65,4 +72,31 @@ section > div.formbox {
     border: 5px solid black;
     border-radius: 50px;
     background-color: aliceblue;
+
+    display: inline-block;
+    position: static;
+}
+
+/* Styling text values inside boxes */
+ul li {
+    color: #ab2800;
+}
+
+ul + p {
+    color: #ab2800;
+}
+
+p[class="red-text-atr"]{
+    color: #ab2800;
+}
+
+br ~ span {
+    color: #ab2800;
+    text-decoration: underline;
+}
+
+h1,
+footer,
+h3 {
+    text-align: center;
 }

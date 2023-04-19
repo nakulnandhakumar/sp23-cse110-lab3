@@ -38,6 +38,7 @@ body {
 div.box {
     width: 1000px;
     height: 400px;
+
     max-width: 900px;
     min-width: 100px;
 
@@ -62,6 +63,7 @@ div.box {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+
     position: sticky;
 }
 
@@ -84,6 +86,7 @@ section > div.formbox {
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: column wrap;
+    
     position: static;
 }
 

@@ -1,0 +1,21 @@
+/* Background color for the entire page*/
+body {
+    background-color: beige;
+}
+
+/* Background color for first few sections detailing notes */
+.unf-business-descr,
+.upcoming-business,
+.comments-descr {
+    background-color:rgb(253, 186, 104);
+}
+
+/* Background color for pictures */
+#pictures {
+    background-color: #7fffd4;
+}
+
+/* Background color for audio section */
+#audio {
+    background-color: hsla(17, 90%, 77%, 0.949);
+}

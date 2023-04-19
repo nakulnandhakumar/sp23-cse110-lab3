@@ -1,3 +1,6 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
+
 /* Background color for the entire page*/
 body {
     background-color: beige;
@@ -8,14 +11,132 @@ body {
 .upcoming-business,
 .comments-descr {
     background-color:rgb(253, 186, 104);
+    margin: auto;
+    border: 5px solid #ab2800;
+    border-radius: 50px;
+    padding: 3vh;
 }
 
 /* Background color for pictures */
 #pictures {
     background-color: #7fffd4;
+    border: 5px solid #0098f6;
+    border-radius: 50px;
+    padding: 3vh;
 }
 
 /* Background color for audio section */
-#audio {
+#audio,
+#video {
     background-color: hsla(17, 90%, 77%, 0.949);
+    border: 5px solid rgb(121, 0, 115);
+    border-radius: 50px;
+    padding: 3vh;
+}
+
+/* Use long-hand for box model and absolute unit values */
+div.box {
+    width: 1000px;
+    height: 400px;
+    max-width: 900px;
+    min-width: 100px;
+
+    margin-top: 1cm;
+    margin-bottom: 10mm;
+    margin-left: 40mm;
+    margin-right: 40mm;
+
+    padding-top: 1pc;
+    padding-bottom: 3pc;
+    padding-right: 3pc;
+    padding-left: 3pc;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    background-color: aliceblue;
+
+    display: inline-grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: sticky;
+}
+
+/* Use short-hand and relative unit values */
+section > div.formbox {
+    width: 70em;
+    height: 40em;
+    max-width: 100em;
+    min-width: none;
+
+    margin: 1vw 1vw 5vw 10vw;
+
+    padding: 3vh 3vh 3vh 3vh;
+
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: static;
+}
+
+/* Styling text values inside boxes */
+ul li {
+    color: #ab2800;
+}
+
+ul + p {
+    color: #ab2800;
+}
+
+p[class="red-text-atr"]{
+    color: #ab2800;
+}
+
+br ~ span {
+    color: #ab2800;
+    text-decoration: underline;
+}
+
+h1,
+footer,
+h3 {
+    text-align: center;
+}
+
+button:hover,
+footer:hover{
+    color: #0098f6;
+}
+
+button:active {
+    background-color: red;
+}
+
+
+/* Media Queries */
+@media (width: 500px) {
+  div.media {
+    color: aqua;
+  }
+}
+@media (min-width: 35em) {
+  div.media {
+    background: red;
+  }
+}
+@media (max-width: 50em) {
+  div.media {
+    border: 20px solid blue;
+  }
+}
+
+* {
+    font-family: 'Indie Flower', cursive;
 }

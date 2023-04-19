@@ -10,28 +10,32 @@
 
   <body>
     <header>
-        <h1 id="title"><strong><em>Second Brainstorm Meeting Minutes</em></strong></h1> 
-        <h4>Wednesday, April 12, 2023</h4>
-        <h2>Attendees</h2>
-        <ul>
-            <li>Nakul Nandhakumar</li>
-            <li>Jane Austin</li>
-            <li>Robert Frost</li>
-            <li>Elon Musk</li>
-            <li>Sundar Pichai</li>
-        </ul>
-        <h2>Agenda</h2>
-        <nav>
-            <ol>
-                <li><a href="#unf">Unfinished Topics</a></li>
-                <li><a href="#fin">Upcoming Topics</a></li>
-                <li><a href="#comments">Comments</a></li>
-                <li><a href="#pictures">Pictures/Diagrams</a></li>
-                <li><a href="#audio">Audio Recording</a></li>
-                <li><a href="#video">Video Recording</a></li>
-                <li><a href="#poll">Poll</a></li>
-            </ol>
-        </nav>
+        <div class="box">
+            <h1 id="title"><strong><em>Second Brainstorm Meeting Minutes</em></strong></h1> 
+            <h4>Wednesday, April 12, 2023</h4>
+            <h2>Attendees</h2>
+            <ul>
+                <li>Nakul Nandhakumar</li>
+                <li>Jane Austin</li>
+                <li>Robert Frost</li>
+                <li>Elon Musk</li>
+                <li>Sundar Pichai</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Agenda</h2>
+            <nav>
+                <ol>
+                    <li><a href="#unf">Unfinished Topics</a></li>
+                    <li><a href="#fin">Upcoming Topics</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#pictures">Pictures/Diagrams</a></li>
+                    <li><a href="#audio">Audio Recording</a></li>
+                    <li><a href="#video">Video Recording</a></li>
+                    <li><a href="#poll">Poll</a></li>
+                </ol>
+            </nav>
+        </div>
         <br><br>
         <span>(Please attend)</span> <span>(Or you won't know what's going on)</span>
     </header>
@@ -42,7 +46,7 @@
         <section class="unf-business-descr">
             <h3 id="unf">Unfinished Topics</h3>   
             <div>
-                <p>
+                <p class="red-text-atr">
                     Previously, we started to introduce team members to each other and 
                     played a few icebreakers to get to know each other. Continued to play
                     our last remaining icebreaker. Connected and followed each others' 
@@ -116,8 +120,8 @@
         </section>
         <hr>
 
-        <section>
-            <h3 id="video">Video Recording</h3>
+        <section class="video-descr" id="video">
+            <h3>Video Recording</h3>
             <video controls width="250">
                 <source src="meetingvideo.mp4" type="video/mp4">
             </video>
@@ -134,62 +138,64 @@
         </section>
         <hr> <br> <br>
 
-        <section>
-            <h1 id="poll">Getting to Know You Form</h1>
-            <form action="index.html">
-                <label for="color">Enter favorite color:</label>
-                <input type="text" name="color" id="color" required> <br> <br>
+        <section class="box" id="form">
+            <div class="formbox">
+                <h1 id="poll">Getting to Know You Form</h1>
+                <form action="index.html">
+                    <label for="color">Enter favorite color:</label>
+                    <input type="text" name="color" id="color" required> <br> <br>
 
-                <fieldset>
-                    <legend>Do you like HTML?</legend>
-                    <label><input type="radio" name="HTML" value="yes" /> Yes</label>
-                    <label><input type="radio" name="HTML" value="no" /> No</label>
-                </fieldset> <br>
+                    <fieldset>
+                        <legend>Do you like HTML?</legend>
+                        <label><input type="radio" name="HTML" value="yes" /> Yes</label>
+                        <label><input type="radio" name="HTML" value="no" /> No</label>
+                    </fieldset> <br>
 
-                <fieldset>
-                    <legend>Select the languages you are familiar with</legend>
-                    <input type="checkbox" id="Java" name="Java">
-                    <label for="Java">Java</label>
-                    <input type="checkbox" id="Python" name="Python">
-                    <label for="Python">Python</label>
-                    <input type="checkbox" id="C" name="C">
-                    <label for="C">C</label>
-                    <input type="checkbox" id="JavaScript" name="JavaScript">
-                    <label for="JavaScript">JavaScript</label>
-                    <input type="checkbox" id="Swift" name="Swift">
-                    <label for="Swift">Swift</label>
-                </fieldset> <br>
+                    <fieldset>
+                        <legend>Select the languages you are familiar with</legend>
+                        <input type="checkbox" id="Java" name="Java">
+                        <label for="Java">Java</label>
+                        <input type="checkbox" id="Python" name="Python">
+                        <label for="Python">Python</label>
+                        <input type="checkbox" id="C" name="C">
+                        <label for="C">C</label>
+                        <input type="checkbox" id="JavaScript" name="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+                        <input type="checkbox" id="Swift" name="Swift">
+                        <label for="Swift">Swift</label>
+                    </fieldset> <br>
 
-                <label for="free">When are you available?</label> <br>
-                <input type="date" id="free" name="free" 
-                    value="2023-03-12" 
-                    min="2000-01-01" max="2030-12-31"> <br> <br>
+                    <label for="free">When are you available?</label> <br>
+                    <input type="date" id="free" name="free" 
+                        value="2023-03-12" 
+                        min="2000-01-01" max="2030-12-31"> <br> <br>
 
-                <label for="favfoods">Enter your favorite food:</label>
-                <input list="favfood" id="favfoods" name="favfoods">
-                <datalist id="favfood">
-                    <option value="Ice Cream">
-                    <option value="Pizza">
-                    <option value="Lasagna">
-                    <option value="Cake">
-                    <option value="Noodles">
-                </datalist> <br> <br>
+                    <label for="favfoods">Enter your favorite food:</label>
+                    <input list="favfood" id="favfoods" name="favfoods">
+                    <datalist id="favfood">
+                        <option value="Ice Cream">
+                        <option value="Pizza">
+                        <option value="Lasagna">
+                        <option value="Cake">
+                        <option value="Noodles">
+                    </datalist> <br> <br>
 
-                <label for="favlang">Choose a language:</label>
-                <select name="favlang" id="favlang">
-                    <option value="">(Choose a language)</option>
-                    <option value="java">Java</option>
-                    <option value="python">Python</option>
-                    <option value="c">C</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="swift">Swift</option>
-                </select> <br> <br>
+                    <label for="favlang">Choose a language:</label>
+                    <select name="favlang" id="favlang">
+                        <option value="">(Choose a language)</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="c">C</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="swift">Swift</option>
+                    </select> <br> <br>
 
-                <label for="about">More info about you:</label>
-                <textarea id="about" name="about" rows="10" cols="80"></textarea>
-                <br><br>
-                <button type="button">Submit</button>
-            </form>
+                    <label for="about">More info about you:</label>
+                    <textarea id="about" name="about" rows="10" cols="80"></textarea>
+                    <br><br>
+                    <button type="button">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -197,6 +203,9 @@
         <p>
             Author: Nakul Nandhakumar, CSE 110
         </p>
+        <div class="media">
+            Watch this text as you change your width
+        </div>
     </footer>
   </body>
 

@@ -1,3 +1,6 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
+
 /* Background color for the entire page*/
 body {
     background-color: beige;
@@ -34,7 +37,8 @@ body {
 /* Use long-hand for box model and absolute unit values */
 div.box {
     width: 1000px;
-    height: 240px;
+    height: 400px;
+
     max-width: 900px;
     min-width: 100px;
 
@@ -54,7 +58,12 @@ div.box {
     border-radius: 50px;
     background-color: aliceblue;
 
-    display: block;
+    display: inline-grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
     position: sticky;
 }
 
@@ -73,7 +82,11 @@ section > div.formbox {
     border-radius: 50px;
     background-color: aliceblue;
 
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column wrap;
+    
     position: static;
 }
 
@@ -99,4 +112,35 @@ h1,
 footer,
 h3 {
     text-align: center;
+}
+
+button:hover,
+footer:hover{
+    color: #0098f6;
+}
+
+button:active {
+    background-color: red;
+}
+
+
+/* Media Queries */
+@media (width: 500px) {
+  div.media {
+    color: aqua;
+  }
+}
+@media (min-width: 35em) {
+  div.media {
+    background: red;
+  }
+}
+@media (max-width: 50em) {
+  div.media {
+    border: 20px solid blue;
+  }
+}
+
+* {
+    font-family: 'Indie Flower', cursive;
 }
